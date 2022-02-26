@@ -1,0 +1,7 @@
+{% extends 'food/base.html' %}
+{% load static %}
+{% block title %}{{name}} profile{% endblock title %}
+{% block profile %}
+<h1>Profile page {{name}}</h1>
+<a href="{% url 'logout' %}" class="btn btn-outline-primary">Logout</a>
+{% endblock profile %}

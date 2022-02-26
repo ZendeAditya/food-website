@@ -1,0 +1,44 @@
+{% extends 'food/base.html' %}
+{% load static %}
+{% block title %}Hotel Paradise | Signup{% endblock title %}
+{% block signup %}
+<h2 class="text-center text-primary mt-3 ">Sign Up</h2>
+<div class="container mt-3 ">
+  <div class="row">
+    <div class="col-6 mx-auto">
+      <div class="container">
+        <button class="btn btn-lg btn-primary text-center mt-2"> <i class=" fab fa-google ms-2"></i>signup With Google</button>
+        <button class="btn btn-lg btn-primary text-center mt-2"> <i class="fab fa-facebook-f ms-2"></i> signup With Facebook</button>
+        <form action="" method="post">
+          {% csrf_token %}
+
+          {% if messages %}
+            {% for msg in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong {% if msg.tags %} class="{{msg.tags}}" {% endif %}></strong>
+              {{msg}}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+          {% endif %}
+
+          {% for fm in form %}
+            <p class="form-label">{{fm.label_tag}}</p>
+              {{fm}}
+            <p class="form-text">{{fm.error|striptags}}</p>
+          {% endfor %}
+          <input type="submit" value="Signup" class="btn btn-outline-info me-3">
+          <a href="{% url 'home' %}" class="btn btn-outline-warning ">Back to home</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock signup %}
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>

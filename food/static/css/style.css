@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.hero-img {
+  background: url(/static/img/food.jpg) no-repeat center center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  height: 80vh;
+  -o-background-size: cover;
+}
+
+
+.hero-img-1 {
+  background: url(/static/img/crousal/img1.jpeg) no-repeat center center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.hero-img-2 {
+  background: url(/static/img/crousal/img2.jpeg) no-repeat center center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.hero-img-3 {
+  background: url(/static/img/crousal/img3.jpeg) no-repeat center center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.mr {
+  margin: 0.5em;
+}
+
+.padb {
+  padding-bottom: 10rem;
+}
+
+/* .border {
+  border: 1px solid rgb(239, 12, 12);
+  border-radius: 8px;
+} */
+
+.btn {
+  transition: all 1s ease-in-out;
+}
+
+.img-fluid {
+  width: 110%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -104.5px;
+  /*104.5px is half of the button's width*/
+}
+
+ul {
+  list-style-type: none;
+}

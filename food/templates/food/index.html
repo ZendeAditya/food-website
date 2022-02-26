@@ -1,0 +1,83 @@
+{% extends 'food/base.html' %}
+
+{% load static %}
+{% block heroimg %}
+<div class="p-5 text-center bg-image rounded-3 hero-img  img-fluid" >
+  <div class="d-flex justify-content-start align-items-center h-100">
+    <div class="text-white">
+      <h1 class="mb-3 text-dark">Heading</h1>
+      <h4 class="mb-3 text-dark">Subheading</h4>
+      <a class="btn btn-outline-success btn-lg" href="#services" role="button"> Explore <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</div>
+<!-- bootstrap -->
+<div class="container-flui">
+
+<div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="p-5 text-center bg-image rounded-3 hero-img-1 mt-4" >
+        <div class="d-flex justify-content-center align-items-center h-100 rounded">
+          <div class="text-white padb">
+            <h1 class="mb-3 text-dark">Heading</h1>
+            <h4 class="mb-3 text-dark">Subheading</h4>
+            <a class="btn btn-outline-success btn-lg" href="#!" role="button">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="p-5 text-center bg-image rounded-3 hero-img-2 mt-4" >
+        <div class="d-flex justify-content-center align-items-center h-100 rounded">
+          <div class="text-white padb">
+            <h1 class="mb-3 text-dark">Heading</h1>
+            <h4 class="mb-3 text-dark">Subheading</h4>
+            <a class="btn btn-outline-success btn-lg" href="#!" role="button">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="p-5 text-center bg-image rounded-3 hero-img-3 mt-4" >
+        <div class="d-flex justify-content-center align-items-center h-100 rounded">
+          <div class="text-white padb">
+            <h1 class="mb-3 text-dark">Heading</h1>
+            <h4 class="mb-3 text-dark">Subheading</h4>
+            <a class="btn btn-outline-success btn-lg" href="#!" role="button">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    {% comment %} <span class="visually-hidden">Previous</span> {% endcomment %}
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    {% comment %} <span class="visually-hidden">Next</span> {% endcomment %}
+  </button>
+</div>
+</div>
+
+{% endblock heroimg %}
+
+{% block services %}
+  {% include 'food/services.html' %}
+{% endblock services %}
+{% block about %}
+  {% include 'food/about.html' %}
+{% endblock about %}
+{% block gallery %}
+  {% include 'food/gallery.html' %}
+{% endblock gallery %}
+{% block footer %}
+  {% include 'food/footer.html' %}
+{% endblock footer %}
+{% comment %} {% block signup %}
+  {% include 'food/signup.html' %}
+{% endblock signup %} {% endcomment %}
